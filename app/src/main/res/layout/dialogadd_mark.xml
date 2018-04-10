@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="300dp"
+    android:weightSum="5"
+   android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_height="400dp">
+
+<TextView
+
+    android:background="@color/c1"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:text="Mark"
+    android:layout_width="match_parent"
+    android:layout_weight="0.8"
+    android:layout_height="0dp" />
+    <android.support.v4.widget.Space
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Subject id:" />
+
+        <Spinner
+            android:id="@+id/hall"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"></Spinner>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Student id:" />
+
+        <Spinner
+            android:id="@+id/spstudent"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"></Spinner>
+
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.8"
+
+        >
+        <!--uid-->
+        <!--name-->
+        <!--address-->
+        <!--phone-->
+        <!--email-->
+        <!--pincode-->
+        <!--password-->
+        <EditText
+            android:id="@+id/sem"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Semster"
+android:inputType="number"
+android:maxLength="1"
+            android:text=""
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_size" />
+    </android.support.design.widget.TextInputLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="0.8"
+    android:layout_height="0dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+
+        >
+        <!--uid-->
+        <!--name-->
+        <!--address-->
+        <!--phone-->
+        <!--email-->
+        <!--pincode-->
+        <!--password-->
+        <EditText
+            android:id="@+id/mark"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Mark"
+
+            android:inputType="number"
+            android:text=""
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_size" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_weight="0.8"
+       android:weightSum="1"
+       android:orientation="horizontal"
+       android:layout_height="0dp">
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+
+           android:layout_weight="1"
+
+           >
+           <!--uid-->
+           <!--name-->
+           <!--address-->
+           <!--phone-->
+           <!--email-->
+           <!--pincode-->
+           <!--password-->
+           <EditText
+               android:id="@+id/internal"
+
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="Internal"
+
+               android:inputType="number"
+               android:text=""
+               android:textColorHint="@color/white"
+               android:textSize="@dimen/text_size" />
+       </android.support.design.widget.TextInputLayout>
+
+
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_marginRight="10dp"
+        android:text="Add"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+    android:layout_weight="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+</LinearLayout>

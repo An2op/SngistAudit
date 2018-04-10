@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/student"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/c4"
+        android:onClick="viewstudent"
+        android:text="View Students"
+        app:layout_constraintBottom_toTopOf="@+id/faculties"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/faculties"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/c4"
+        android:onClick="viewmark"
+        android:text="View Mark"
+        app:layout_constraintBottom_toTopOf="@+id/attendene"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/student" />
+
+    <Button
+
+        android:id="@+id/attendene"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/c4"
+        android:onClick="attendence"
+        android:text="Attendence"
+        app:layout_constraintBottom_toTopOf="@+id/mark"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/faculties" />
+
+    <Button
+        android:id="@+id/mark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/c4"
+        android:onClick="courseplan"
+        android:text="Course Plan"
+        app:layout_constraintBottom_toTopOf="@+id/vclass"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/attendene" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/c4"
+        android:onClick="logout"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/vclass" />
+
+    <Button
+        android:id="@+id/vclass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/c4"
+        android:onClick="viewclass"
+        android:text="Tutorial"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toStartOf="@+id/vclassremdy"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/mark" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/c4"
+        android:text="Assignment"
+        android:onClick="assignment"
+        app:layout_constraintBottom_toTopOf="@+id/attendene"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/faculties"
+        app:layout_constraintTop_toBottomOf="@+id/student"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/vclassremdy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+android:onClick="remdycls"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/c4"
+        android:text="remedial"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/vclass"
+        app:layout_constraintTop_toBottomOf="@+id/mark" />
+</android.support.constraint.ConstraintLayout>

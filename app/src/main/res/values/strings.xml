@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Audit</string>
+    <string name="error_field_required">field required</string>
+    <string name="error_invalid_email">invalid email id</string>
+</resources>

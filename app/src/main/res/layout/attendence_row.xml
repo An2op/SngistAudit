@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="3dp"
+    android:clickable="true"
+
+    android:foreground="?attr/selectableItemBackground"
+
+    >
+    <!--{"station":[{"station_id":"kattappana","pincode":"686687","district_id":"3",-->
+    <!--"address":"Kattappana","phone":"04898745854","station_type":"2","password":""},-->
+
+    <!-- Rightend Arrow -->
+    <!--{"student":[{"student_id":"std","name":"stdn","address":"addr","phone":"654125",-->
+    <!--"email":"std@gmail.com","join_date":"2018-06-03","course_id":"bsc","semester":"6"}]}-->
+<LinearLayout
+    android:paddingLeft="10dp"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+
+        android:gravity="center|left"
+        android:id="@+id/hid"
+        android:layout_weight="0.6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:id="@+id/sem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:background="@color/c1"
+        android:gravity="center|left"
+        android:layout_weight="0.8"
+        android:id="@+id/vacancy"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center|left"
+        android:layout_weight="0.8"
+        android:id="@+id/status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+<Button
+    android:visibility="invisible"
+    android:background="@drawable/ic_delete"
+    android:id="@+id/delete"
+    android:layout_width="30dp"
+    android:layout_height="40dp" />
+
+</LinearLayout>
+
+
+</android.support.v7.widget.CardView>
