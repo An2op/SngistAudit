@@ -188,8 +188,8 @@ try{
 
 
                     try {
-                        if (jsonObj.has("course")) {
-                            if(jsonObj.getString("course").equals("true")){
+                        if (jsonObj.has("plan")) {
+                            if(jsonObj.getString("plan").equals("true")){
                                 Toast.makeText(mContext, "Removed", Toast.LENGTH_SHORT).show();
 //for(int i=0;i<station.size();i++){
 //

@@ -9,8 +9,11 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 
@@ -31,12 +34,13 @@ import retrofit2.Call;
 
 public class StudentViewActivity extends AppCompatActivity {
     private ArrayList<StudentData> station;
-
+    private ArrayList<StudentData> stationback;
     private RecyclerViewAdapterStudents adapter1;
     private String noid="-1";
     private String sem="-1";
+    String as[]={"All","1","2","3","4","5","6","7","8"};
     private RecyclerView recyclerView;
-
+Spinner sphall;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +51,7 @@ public class StudentViewActivity extends AppCompatActivity {
             sem=getIntent().getStringExtra("sid");
         }
       Button add=  ((Button)findViewById(R.id.add));
+
         if(Utility.USERTYPE.equals("ADMIN")){
 
            // add.setVisibility(View.VISIBLE);
@@ -60,7 +65,11 @@ public class StudentViewActivity extends AppCompatActivity {
 //                finish();
             }
         });
+
         getNotification(noid);
+
+
+      //  getNotification(noid);
     }
     private void getNotification(String noid) {
 
@@ -89,7 +98,7 @@ public class StudentViewActivity extends AppCompatActivity {
                 if (jsonObj != null) {
                     Log.d("getfromserver", "b4 extract");
                     JSONObject actor = null;
-
+                    stationback=new ArrayList<>();
                     station=new ArrayList<>();
                     try {
                         if (jsonObj.has("student")) {
@@ -114,12 +123,12 @@ public class StudentViewActivity extends AppCompatActivity {
                             } }
                         //    {"station":[{"station_id":"kattappana","pincode":"686687",
 //            "district_id":"3","address":"Kattappana","phone":"04898745854","station_type":"2","password":""},
-
+                        stationback=station;
 
                     } catch (Exception eee) {
                         eee.printStackTrace();
                     }
-                    setView();
+                   setView();
                 }
             }
             @Override

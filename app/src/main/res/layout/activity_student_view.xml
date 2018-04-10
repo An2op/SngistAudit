@@ -3,31 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/bg4"
-    android:layout_height="match_parent">
+    tools:layout_editor_absoluteY="81dp">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/sub"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
     <RelativeLayout
-        android:orientation="horizontal"
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="69dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/sub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -43,9 +47,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:visibility="invisible"
             android:id="@+id/add"
-            android:onClick="addstudent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -53,7 +55,9 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="12dp"
             android:layout_marginRight="12dp"
-            android:text="Add" />
+            android:onClick="addstudent"
+            android:text="Add"
+            android:visibility="invisible" />
 
     </RelativeLayout>
 

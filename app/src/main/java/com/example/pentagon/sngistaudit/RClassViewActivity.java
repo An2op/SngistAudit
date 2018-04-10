@@ -44,12 +44,13 @@ public static String head;
     private String sem="-1";
     private RecyclerView recyclerView;
     private Spinner spstudent,spsubject;
-
+Spinner sphall;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_view);
         recyclerView=(RecyclerView) findViewById(R.id.sub);
+
         if(getIntent().getStringExtra("id")!=null){
             noid=getIntent().getStringExtra("id");
             sem=getIntent().getStringExtra("sid");

@@ -45,7 +45,7 @@ public static String head;
     private String sem="-1";
     private RecyclerView recyclerView;
     private Spinner spstudent,spsubject;
-
+Spinner sphall;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +55,7 @@ public static String head;
             noid=getIntent().getStringExtra("id");
             sem=getIntent().getStringExtra("sid");
         }
+
         ((TextView)findViewById(R.id.textView)).setText("Tutorial Class");
       Button add=  ((Button)findViewById(R.id.add));
         if(!Utility.USERTYPE.equals("STUDENT")){
