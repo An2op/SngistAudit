@@ -439,7 +439,7 @@ private void getCourse() {
                 }
                 else{
 
-                    newatt(spstudent.getSelectedItem().toString(),spsubject.getSelectedItem().toString(),sem.getText().toString(),date.getText().toString(),details.getText().toString(),type.getText().toString());
+                    newatt(((SubjectData)spsubject.getSelectedItem()).getSubject_id(),((SubjectData)spsubject.getSelectedItem()).getSubject_id(),sem.getText().toString(),date.getText().toString(),details.getText().toString(),type.getText().toString());
                     dd.dismiss();
                 }
             }

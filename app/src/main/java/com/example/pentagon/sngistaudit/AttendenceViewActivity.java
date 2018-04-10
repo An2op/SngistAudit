@@ -279,7 +279,7 @@ getSubject();
                         status="Present";
                     else
                         status="Absent";
-                    newatt(((StudentData2)spstudent.getSelectedItem()).getStudent_id(),spsubject.getSelectedItem().toString(),sem.getText().toString(),date.getText().toString(),time.getText().toString(),status);
+                    newatt(((StudentData2)spstudent.getSelectedItem()).getStudent_id(),((SubjectData)spsubject.getSelectedItem()).getSubject_id(),sem.getText().toString(),date.getText().toString(),time.getText().toString(),status);
                     dd.dismiss();
                 }
             }

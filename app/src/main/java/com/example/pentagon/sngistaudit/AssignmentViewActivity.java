@@ -156,7 +156,7 @@ public class AssignmentViewActivity extends AppCompatActivity {
                 }
                 else{
 
-                    newmark(((StudentData2)spstudent.getSelectedItem()).getStudent_id(),spsubject.getSelectedItem().toString(),sem.getText().toString(),mark.getText().toString(),title.getText().toString(),date.getText().toString());
+                    newmark(((StudentData2)spstudent.getSelectedItem()).getStudent_id(),((SubjectData)spsubject.getSelectedItem()).getSubject_id(),sem.getText().toString(),mark.getText().toString(),title.getText().toString(),date.getText().toString());
                     dd.dismiss();
                 }
             }

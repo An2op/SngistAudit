@@ -180,7 +180,7 @@ else {
                 }
                 else{
 
-                    newmark(((StudentData2)spstudent.getSelectedItem()).getStudent_id(),spsubject.getSelectedItem().toString(),sem.getText().toString(),mark.getText().toString(),internal.getText().toString());
+                    newmark(((StudentData2)spstudent.getSelectedItem()).getStudent_id(),((SubjectData)spsubject.getSelectedItem()).getSubject_id(),sem.getText().toString(),mark.getText().toString(),internal.getText().toString());
                     dd.dismiss();
                 }
             }

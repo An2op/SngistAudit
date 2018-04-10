@@ -272,7 +272,7 @@ Spinner subject;
                     multipart.addHeaderField("Test-Header", "Header-Value");
                     multipart.addFormField("staff_id", Utility.USER_NAME);
                     multipart.addFormField("title", title.getText().toString());
-                    multipart.addFormField("subject_id", spsubject.getSelectedItem().toString());
+                    multipart.addFormField("subject_id",((SubjectData)spsubject.getSelectedItem()).getSubject_id());
 //                    multipart.addFormField("latitude", Utility.lat);
 //                    for(int j=0;j<imagefile.size();j++){
 //

@@ -43,6 +43,6 @@ public class SubjectData {
 
     @Override
     public String toString() {
-        return subject_id;
+        return name+"("+subject_id+")";
     }
 }
